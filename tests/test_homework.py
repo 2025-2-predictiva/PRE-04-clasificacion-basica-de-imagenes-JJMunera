@@ -13,7 +13,7 @@ def test_01():
     digits = datasets.load_digits(return_X_y=True)
     data, target = digits
 
-    if not os.path.exists("homework/estimator.pkl"):
+    if not os.path.exists("homework/estimator.pickle"):
         raise FileNotFoundError("homework/estimator.pkl not found")
 
     with open("homework/estimator.pkl", "rb") as file:
